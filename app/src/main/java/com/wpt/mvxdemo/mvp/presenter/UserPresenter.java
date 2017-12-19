@@ -1,9 +1,9 @@
-package mvx.wpt.com.mvxdemo.mvp.presenter;
+package com.wpt.mvxdemo.mvp.presenter;
 
-import mvx.wpt.com.mvxdemo.mvp.model.IUser;
-import mvx.wpt.com.mvxdemo.mvp.model.User;
-import mvx.wpt.com.mvxdemo.mvp.model.UserImpl;
-import mvx.wpt.com.mvxdemo.mvp.view.IUserView;
+import com.wpt.mvxdemo.mvp.model.IUser;
+import com.wpt.mvxdemo.mvp.model.User;
+import com.wpt.mvxdemo.mvp.model.UserImpl;
+import com.wpt.mvxdemo.mvp.view.IUserView;
 
 /**
  * Created by wpt on 17/12/19.

@@ -1,7 +1,7 @@
-package mvx.wpt.com.mvxdemo.mvc.ctrl;
+package com.wpt.mvxdemo.mvc.ctrl;
 
-import mvx.wpt.com.mvxdemo.mvc.model.User;
-import mvx.wpt.com.mvxdemo.mvc.view.MVCActivity;
+import com.wpt.mvxdemo.mvc.model.User;
+import com.wpt.mvxdemo.mvc.view.MVCActivity;
 
 /**
  * Created by wpt on 17/12/18.

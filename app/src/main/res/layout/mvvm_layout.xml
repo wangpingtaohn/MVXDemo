@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="user"
+            type="com.wpt.mvxdemo.mvvm.model.User"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="mvx.wpt.com.mvxdemo.com.wpt.com.mvxdemo.mvc.view.MVCActivity">
+
+        <Button
+            android:id="@+id/mvvm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Btn" />
+
+        <TextView
+            android:id="@+id/mvvm_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.name}"
+            app:layout_constraintTop_toBottomOf="@+id/mvvm_btn"
+            tools:layout_editor_absoluteY="124dp" />
+        <TextView
+            android:id="@+id/mvvm_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{user.id}"
+            app:layout_constraintTop_toBottomOf="@+id/mvvm_textView1"
+            tools:layout_editor_absoluteY="124dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

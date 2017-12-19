@@ -1,6 +1,6 @@
-package mvx.wpt.com.mvxdemo.mvp.view;
+package com.wpt.mvxdemo.mvp.view;
 
-import mvx.wpt.com.mvxdemo.mvp.model.User;
+import com.wpt.mvxdemo.mvp.model.User;
 
 /**
  * Created by wpt on 17/12/19.

@@ -1,12 +1,14 @@
-package mvx.wpt.com.mvxdemo;
+package com.wpt.mvxdemo;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import mvx.wpt.com.mvxdemo.mvc.view.MVCActivity;
-import mvx.wpt.com.mvxdemo.mvp.view.MVPActivity;
+
+import com.wpt.mvxdemo.mvc.view.MVCActivity;
+import com.wpt.mvxdemo.mvp.view.MVPActivity;
+import com.wpt.mvxdemo.mvvm.view.MVVMActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.mvvm_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, MVVMActivity.class));
             }
         });
     }

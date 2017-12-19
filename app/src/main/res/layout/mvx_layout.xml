@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mvx.wpt.com.mvxdemo.mvc.view.MVCActivity">
+    tools:context="mvx.wpt.com.mvxdemo.com.wpt.com.mvxdemo.mvc.view.MVCActivity">
 
     <Button
         android:text="Btn"

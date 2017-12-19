@@ -1,6 +1,6 @@
-package mvx.wpt.com.mvxdemo.mvp.model;
+package com.wpt.mvxdemo.mvp.model;
 
-import mvx.wpt.com.mvxdemo.mvc.view.MVCActivity;
+import com.wpt.mvxdemo.mvc.view.MVCActivity;
 
 /**
  * Created by wpt on 17/12/18.

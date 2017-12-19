@@ -1,22 +1,24 @@
-package mvx.wpt.com.mvxdemo.mvc.view;
+package com.wpt.mvxdemo.mvp.view;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import mvx.wpt.com.mvxdemo.R;
-import mvx.wpt.com.mvxdemo.mvc.ctrl.UserCtrl;
-import mvx.wpt.com.mvxdemo.mvc.model.User;
+import com.wpt.mvxdemo.R;
+import com.wpt.mvxdemo.mvp.model.User;
 
-public class MVCActivity extends Activity {
+
+import com.wpt.mvxdemo.mvp.presenter.UserPresenter;
+
+public class MVPActivity extends AppCompatActivity implements IUserView{
 
     public TextView mTextView;
 
     public Button mBtn;
 
-    public UserCtrl mCtrl;
+    private UserPresenter mPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,18 +27,19 @@ public class MVCActivity extends Activity {
 
         mTextView = (TextView) findViewById(R.id.mvx_textView);
         mBtn = (Button) findViewById(R.id.mvx_btn);
-        mCtrl = new UserCtrl();
+        mPresenter = new UserPresenter(this);
 
         mBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCtrl.LoadData(MVCActivity.this);
+                mPresenter.loadData();
 
             }
         });
     }
 
-    public void updateUI(User user){
+    @Override
+    public void updateUI(User user) {
         mTextView.setText("id=" + user.id + ",name=" + user.name);
     }
 }
