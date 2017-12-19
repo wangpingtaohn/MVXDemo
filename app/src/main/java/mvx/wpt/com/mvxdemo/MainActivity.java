@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import mvx.wpt.com.mvxdemo.mvc.view.MVCActivity;
+import mvx.wpt.com.mvxdemo.mvp.view.MVPActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.mvp_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(MainActivity.this, MVPActivity.class));
             }
         });
         findViewById(R.id.mvvm_btn).setOnClickListener(new View.OnClickListener() {
