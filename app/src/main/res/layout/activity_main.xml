@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mvx.wpt.com.mvxdemo.MainActivity">
+
+    <Button
+        android:id="@+id/mvc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVC" />
+
+    <Button
+        android:id="@+id/mvp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="MVP" />
+
+    <Button
+        android:id="@+id/mvvm_btn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MVVM" />
+</LinearLayout>
