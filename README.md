@@ -1,1 +1,1 @@
-MVC MVP MVVM demo
+MVC MVP MVVM 三种模式的简单demo
