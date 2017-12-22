@@ -3,8 +3,8 @@
 
     <data>
         <variable
-            name="user"
-            type="com.wpt.mvxdemo.mvvm.model.User"/>
+            name="userViewModel"
+            type="com.wpt.mvxdemo.mvvm.viewmodel.UserViewModel"/>
     </data>
 
     <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,20 +17,21 @@
             android:id="@+id/mvvm_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Btn" />
+            android:onClick="@{userViewModel.onClickBtn}"
+            android:text="click" />
 
         <TextView
             android:id="@+id/mvvm_textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.name}"
+            android:text="@{`usrName :` + userViewModel.user.name}"
             app:layout_constraintTop_toBottomOf="@+id/mvvm_btn"
             tools:layout_editor_absoluteY="124dp" />
         <TextView
             android:id="@+id/mvvm_textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{user.id}"
+            android:text="@{String.valueOf(userViewModel.user.id)}"
             app:layout_constraintTop_toBottomOf="@+id/mvvm_textView1"
             tools:layout_editor_absoluteY="124dp" />
 
